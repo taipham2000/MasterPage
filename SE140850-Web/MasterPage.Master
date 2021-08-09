@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="SE140850_Web.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            background-color: #FF0000;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:Label ID="Label1" runat="server"  Font-Bold="True" Font-Size="XX-Large" Text="Welcome to MasterPage - ChildPage and Wizard" CssClass="auto-style1"></asp:Label><br />
+            </asp:ContentPlaceHolder>
+            <asp:Menu ID="Menu1" runat="server">
+                <Items>
+                    <asp:MenuItem NavigateUrl="Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="Build.aspx" Text="Build a Pubs" Value="New Item"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="View.aspx" Text="View Jobs" Value="New Item"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+        <asp:Label ID="Label2" runat="server" Text=" Copyright © 2021"></asp:Label>
+    </form>
+</body>
+</html>
