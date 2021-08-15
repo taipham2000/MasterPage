@@ -4,7 +4,7 @@
 ![Github to language](https://img.shields.io/github/languages/top/taipham2000/MasterPage?logo=github)
 
 ### You will find in this repo the following stuff: 
-* This repo has a basic project about Java-Web
+* This repo has a basic project about WebForm
 * Techs: SQLServer, Visual Studio 2019
 
 
